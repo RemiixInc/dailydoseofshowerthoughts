@@ -1,37 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Stats | RemiixInc</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;0,900;1,100;1,200;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="https://remiixinc.ml/assets/images/remiix.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="shortcut icon"
-      href="https://remiixinc.ml/assets/images/remiix.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="https://fonticon.glitch.me/font.css" />
-    <script
-      src="https://kit.fontawesome.com/6733872eda.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/css/style.css" />
-    <script>
-      if (location.protocol == "http:") location.protocol = "https:";
-    </script>
-  </head>
-  <body id="body" oncontextmenu="return false;">
-    {{ content | safe }}
-  </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="gautaman.ml">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Daily Dose of Shower Thoughts">
+    <meta property="og:description" content="Hello everyone, This is YOUR Daily Dose of Shower Thoughts">
+    <meta property="og:url" content="https://dailydoseofshowerthoughts.gautaman.ml">
+    <title>Daily Dose of Shower Thoughts</title>
+    <style>
+        @keyframes rotate {
+            0% {
+                transform: rotate(2deg);
+            }
+
+            100% {
+                transform: rotate(-2deg);
+            }
+        }
+
+        @keyframes gradientBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
+                Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
+            background-size: 600% 400%;
+            animation: gradientBackground 10s ease infinite;
+            color: white;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+        }
+
+        h1 {
+            margin: 5px 1em;
+            font-size: 35px;
+            line-height: 1.3;
+            text-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+            animation: rotate ease-in-out 1s infinite alternate;
+        }
+
+        h3 {
+            font-size: 20px;
+            line-height: 1.3;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+{{ content | safe }}
+</body>
 </html>
