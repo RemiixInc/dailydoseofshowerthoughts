@@ -1,0 +1,34 @@
+---
+layout: base.html
+---
+
+<div class="box">
+  <div class="container">
+    <a href="https://github.com/remiixinc">
+      <i class="fab fa-github" style="color: #33ccff"></i>
+      <span><b>GitHub</b></span
+      ><br />
+      <span id="git">
+        {{ github.public_repos }} repos<br />
+        {{ github.followers }} followers<br />
+        {{ github.following }} following<br />
+      </span>
+    </a>
+    <a href="https://glitch.com/@Remiix">
+      <i class="icon-glitch" style="color: #33ccff"></i>
+      <span><b>Glitch</b></span
+      ><br />
+      <span id="glitch"> {{ glitch.Remiix.thanksCount }} thanks<br /> </span>
+    </a>
+    <a href="https://www.youtube.com/channel/UCkuKzwbQX0WFG2v457QTOSw">
+      <i class="fab fa-youtube" style="color: #33ccff"></i>
+      <span><b>YouTube</b></span
+      ><br />
+      <span id="yt">
+        {{ youtube.subscriberCount }} subscribers<br />
+        {{ youtube.viewCount }} views<br />
+        {{ youtube.videoCount }} videos
+      </span>
+    </a>
+  </div>
+</div>

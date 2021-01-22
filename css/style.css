@@ -1,0 +1,47 @@
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: black;
+  transition-duration: 0.4s;
+}
+
+.box {
+  display: table;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
+.container {
+  padding-left: 5%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  color: #33ccff;
+  font-family: "VT323";
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #33ccff;
+}
+
+span {
+  color: #33ccff;
+}
+
+img {
+  padding-right: 5px;
+}
