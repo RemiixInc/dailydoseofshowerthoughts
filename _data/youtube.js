@@ -2,7 +2,7 @@ var request = require("sync-request");
 // make the request
 var res = request(
   "GET",
-  `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCkuKzwbQX0WFG2v457QTOSw&key=${process.env.API_KEY}`,
+  `https://www.reddit.com/r/showerthoughts/hot/.json?limit=10`,
   {
     headers: {
       "user-agent": "RemiixInc"
@@ -10,5 +10,6 @@ var res = request(
   }
 );
 // parse response
-res = JSON.parse(res.getBody()).items[0].statistics;
+res = JSON.parse(res.getBody())
+var data = {post: res.data.children[4].data.title, author: "U/" + json.data.children[4].data.author_fullname}
 module.exports = res;
