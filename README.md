@@ -1,2 +1,2 @@
-# Stats
-Social stats page. Updated every hour via a Vercel deploy hook.
+# dailydoseofshowerthoughts
+Shower thoughts page. Updated every day via a Vercel deploy hook.
