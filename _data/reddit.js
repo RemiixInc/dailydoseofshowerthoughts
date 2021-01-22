@@ -11,5 +11,5 @@ var res = request(
 );
 // parse response
 res = JSON.parse(res.getBody())
-var data = {post: res.data.children[4].data.title, author: "U/" + res.data.children[4].data.author_fullname}
+var data = {post: res.data.children[4].data.title, author: "U/" + res.data.children[4].data.author}
 module.exports = data;
