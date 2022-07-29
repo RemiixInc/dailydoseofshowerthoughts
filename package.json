@@ -12,7 +12,7 @@
     "http-server": "^0.12.3"
   },
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "repository": {
     "url": "https://github.com/RemiixInc/stats"
